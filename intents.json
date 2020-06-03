@@ -1,0 +1,459 @@
+{"intents": [
+	{"tag": "greeting",
+         "patterns": ["Hi","Hello"],
+         "responses": ["Hello!"],
+         "context_set": ""
+        },    
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "What support is offered"],
+         "responses": ["I can guide you through CDU library system."],
+         "context": [""]
+        },
+        {"tag": "lib_address",
+         "patterns": ["Where is CDU library", "Where can I find CDU library", "What is the CDU library address ", "CDU library address"],
+         "responses": ["Alice Springs: Grevillea Drive Alice Springs NT 0870. Palmerston-campus: University Avenue Palmerston NT 0830. Casuarina: Ellengowan Drive Casuarina NT 0810. Sydney: Level 9, 815 George Street, Haymarket Sydney NSW 2000"],
+         "context": [""]
+        }, 
+        {"tag": "contact_number",
+         "patterns": ["where is the library contact number","what is the library contact number"],
+         "responses": ["Email: askthelibrary@cdu.edu.au and Phone: 0889467016"],
+         "context": [""]
+        },
+        {"tag": "books",
+         "patterns": ["How many books are there"],
+         "responses": ["There are more 2000 books in the library"],
+         "context": [""]
+        }, 
+        {"tag": "history_books",
+         "patterns": ["What books are available on War and History"],
+         "responses": ["Examining the Historical Representation of the Holocaust within Trade Books, Unknown history of Slovenian librarianship: Celje Public Library during World War II, The 5,000-year war on cancer: an oncologist's beautifully written history attempts to grapple with the disease.(Books)('The Emperor of All Maladies' by oncologist Siddhartha Mukherjee, Books That Changed History: From the Art of War to Anne Frank’s Diary"],
+         "context": [""]
+        }, 
+        {"tag": "Computer_science_books",
+         "patterns": ["Books on Computer Science"],
+         "responses": ["Ambient Belonging: How Stereotypical Cues Impact Gender Participation in Computer Science, An analysis of books used by computer science and engineering students at Siddhartha Engineering College, Comparing School Science Explanations in Books and Computer-Based Formats: The Role of Images, Image/Text Relations and Hyperlinks, Ambient belonging: how stereotypical cues impact gender participation in computer science.(INTERPERSONAL RELATIONS AND GROUP PROCESSES)(Report)"],
+         "context": [""]
+        }, 
+        {"tag": "Programing_books",
+         "patterns": ["Any book on Python programming","Any book on Java programming","Any book on C programming"],
+         "responses": ["There are so many books on Python, Java and C programming books please use library search to find the specific names"],
+         "context": [""]
+        }, 
+        {"tag": "Computer_Security_books",
+         "patterns": ["What books are there on Computer Security"],
+         "responses": ["Books For Master Of Engineering (computer Engineering, Cyber Security), Elsevier Acquires Syngress Publishing -- Bringing Readers Worldwide Premier Computer Security Books, List Of Books For Master Of Engineering Computer Engineering (cyber Security) -1 Mathematical Foundation For Cyber Security"],
+         "context": [""]
+        }, 
+        {"tag": "paper_magazine",
+         "patterns": ["Do you have magazines and newspapers as well?"],
+         "responses": ["Yes, there are many maganzines and newspapers on the library"],
+         "context": [""]
+        },
+        {"tag": "rate_of_fine",
+         "patterns": ["What is the rate of fine for overdue books","What is the overdue fees"],
+         "responses": ["Overdue fines accrue daily. You can avoid fines by checking your Library account regularly, checking your emails regularly, returning items on or by the due date and returning items before travelling. You will be blocked from borrowing if your fines reach $50 or if there is an overdue item on your account."],
+         "context": [""]
+        }, 
+        {"tag": "level_of_membership",
+         "patterns": ["What are the levels of membership","What are the levels of Membership"],
+         "responses": ["There are 8 levels of membership: CDU student, CDU staff, CDU alumni, CDU Honorary appointees, CDU partners, Community members, Local senior school students and staff, Studying or working at another university/TAFE/VET institution?"],
+         "context": [""]
+        }, 
+        {"tag": "books_borrow_from_library",
+         "patterns": ["How can I borrow a book"],
+         "responses": ["You can check your due dates by logging into  Manage My Library Account from the Library Home page under Library Services."],
+         "context": [""]
+        }, 
+        {"tag": "number_of_books_borrow",
+         "patterns": ["How many books can I borrow at a time"],
+         "responses": ["You can borrow books according to your membership category."],
+         "context": [""]
+        },  
+        {"tag": "library_work",
+         "patterns": ["How does the library work?", "how is the library working","how the library works","how the library is working"],
+         "responses": ["Use Library Search to find books, ebooks, journal articles, digital media and more. Link to an A-Z list of journals and databases. Login to your Library Account to renew items that you have borrowed, create lists of saved items and searches, and export, save, email or print results."],
+         "context": [""]
+        },
+        {"tag": "library_referencing",
+         "patterns": ["Can someone help me with referencing?" ,"Can anyone help me with referencing"],
+         "responses": ["Yes, the library has produced a number to tools and resources for you to learn how to reference and can assist with referencing questions. See the CDU Referencing Guide for information on different referencing styles like APA, CDU Harvard and the AGLC. Contact us if you need more information: Email: askthelibrary@cdu.edu.au and Phone: 0889467016"],
+         "context": [""]
+        },
+        {"tag": "library_exam_papers",
+         "patterns": ["Where can I find past exam papers?","where can I find my past exam papers" ],
+         "responses": ["Not all lecturers choose to make exam papers available. The ones we have are available in Past Exam Papers on the library website. Please note that multiple choice exams usually only show the layout of the exam and not the questions. The questions are often covered in your Learnline material or in quizzes completed in the unit. Please contact your lecturer if your exam papers are not listed or are incomplete"],
+         "context": [""]
+        },
+        {"tag": "library_opening_hours",
+         "patterns": ["What are the library's opening hours","What is the library's opening hour","what are the library's opening hours?","what is the library opening hour?"],
+         "responses": ["Check out our opening hours on the library's web page. Opening hours vary between campuses and at different times of semester.For the Darwin Waterfront Campus:  Building and bookpod access: Monday to Friday 8.00am to 9.00pm and Front desk hours: 8.00am to 4.00pm Monday to Thursday; 8.00am to 3.00pm Friday"],
+         "context": [""]
+        },
+        {"tag": "other_university_liraries",
+         "patterns": ["Can I borrow from other university libraries?","Can I borrow books from other university libraries?","Can I borrow a book from other university libraries?","Can I borrow any books from other university libraries","Can I borrow an item from other university libraries","Can I borrow items from other university libraries","Can I borrow anything from other university libraries","Could I borrow from other university libraries?","Could I borrow books from other university libraries?","Could I borrow a book from other university libraries?","Could I borrow any books from other university libraries","Could I borrow an item from other university libraries","Could I borrow items from other university libraries","Could I borrow anything from other university libraries"],
+         "responses": ["Yes. Check the ULANZ list for participating universities throughout Australia and New Zealand. Arrangements differ between the universities so we suggest that you contact the university libraries individually in relation to access and use of their library"],
+         "context": [""]
+        },
+        {"tag": "library_password",
+         "patterns": ["what is the password for the library databases","what are the password for the library databases"],
+         "responses": ["You can access most databases by using your staff or student username and password.Some specialist databases such as the Design Content Library may require additional password information see our Passwords page. You will need to login to this page using your staff or student password."],
+         "context": [""]
+        },
+        {"tag": "library_room",
+         "patterns": ["Can I book a study room or other space","Can I book a meeting room or other space","Can I book a training room or other space"],
+         "responses": ["Our group study rooms are available to CDU staff and students.If you are not a CDU student or staff member, contact the University's Facilities office about venue hire. Alice Springs: Let the Service desk staff knows and they'll make a booking on your behalf. Casuarina and Palmerston: Group Study Rooms are booked online from the library homepage using your CDU email address and require confirmation via email. Campuses are selected using the Location drop-down box in the top-left corner, Casuarina campus is selected by default. Sydney: Contact the Campus Manager at cdusydney@cdu.edu.au for room bookings. "],
+         "context": [""]
+        },
+        {"tag": "library_photocopy",
+         "patterns": ["How can I print something","How can I photocopy something","How can I scan something"],
+         "responses": ["Each campus has at least one multifunction device on which you can print, photocopy and scan documents or images. At Casuarina, Alice Springs, Palmerston and Sydney campuses, you'll find these devices in the library. At the Waterfront the device is on Level 3. You will need a current student card to print, scan to email or photocopy. Scanning to a flash drive is available to all library clients. There are clear instructions for you to follow provided near the machines, but if you need help, just ask us via Email: askthelibrary@cdu.edu.au or Phone: 0889467016"],
+         "context": [""]
+        },
+        {"tag": "library_peer_reviewed",
+         "patterns": ["How can I find out if a journal is peer reviewed"],
+         "responses": ["Check if your article is listed in Ulrich’s Periodicals Directory as a ‘refereed’ (peer reviewed) article. On the library website: Select 'Databases', Select ‘U’ from the alphabetical list, Select ‘Ulrich’s Periodicals Directory’, Type in your journal title,Search, and Check if the journal name has a black and white symbol beside it (which means it is refereed), or a star (reviewed). Alternatively open the entry to see if it is listed as refereed. "],
+         "context": [""]
+        },
+        {"tag": "studying_externally",
+         "patterns": ["I am studying externally, how do I get books","I am studying externally, how do I get a book"],
+         "responses": ["If you live in Darwin, Palmerston, or Alice Springs, you will need your student card to borrow at your closest campus Library. If you are living more than 80km from any of our Northern Territory campuses, you are eligible for our Distance Library Services."],
+         "context": [""]
+        },
+        {"tag": "early_book",
+         "patterns": ["why do I have to bring back the book early"],
+         "responses": ["Library books/resources are shared among all Library clients. There are borrowing limits applied according to the membership of a client so that every client gets an opportunity to use or borrow books. There are options to renew books if no other client needs the book.Click here for more information on borrowing"],
+         "context": [""]
+        },
+        {"tag": "ebook",
+         "patterns": ["why can't I access an ebook","why cannot I access an ebook","why I can't access an ebook","why I cannot access an ebook"],
+         "responses": ["The Library subscribes to a range of electronic books via different publishers. Some of these have restrictive license conditions ie: 3 user access models. This means that only 3 people can access the title concurrently whether that is to download or read online. There is usually a 30 minute inactivity setting built in so that if there is no activity with the book in that time you will be logged out and the license becomes available for another client. The Library will buy multi-user licenses wherever possible."],
+         "context": [""]
+        },
+        {"tag": "borrower_types",
+         "patterns": ["what are the different borrower types"],
+         "responses": ["Access information related to different borrower types here."],
+         "context": [""]
+        },
+        {"tag": "item_request",
+         "patterns": ["How can I request an item","How can I request items"],
+         "responses": ["Use the request function to get access to resources that are currently unavailable at your current campus. Find the item using Library Search.Under the 'Get It' sub-heading will be a link to login to your library account. Once you are logged-in, there will be an option to 'Request'. Click request and choose your pickup location. If you live more than 80kms away from our NT campus Libraries, 'home address' should show as your pick up location. If this doesn't happen for you, write us a note about posting the items to you in the comments field."],
+         "context": [""]
+        },
+        {"tag": "library_item",
+         "patterns": ["what do I request an item the library doesn't have", "what do I request items the library doesn't have", "what do I request an item the library does not have","what do I request items the library does not have"],
+         "responses": ["Check out how to request resources."],
+         "context": [""]
+        },
+        {"tag": "books_borrow",
+         "patterns": ["how many books can I borrow"],
+         "responses": ["You can borrow books according to your membership category."],
+         "context": [""]
+        },
+        {"tag": "live_locally",
+         "patterns": ["How do I borrow from the library when I don’t live locally?", "How do I borrow from the library when I do not live locally?"],
+         "responses": ["You may be eligible to borrow using our Distance Library Services. Check Distance Library Services for more information."],
+         "context": [""]
+        },
+        {"tag": "library_postage",
+         "patterns": ["Do I have to pay for postage if the library sends me books?"],
+         "responses": ["The library pays for the postage to send items to CDU students and staff if they are eligible for Distance Library Services. If you are a student we will include a return postage bag with your items so you can return them. Please note: if you borrow items in person, while on campus, no return postage is provided."],
+         "context": [""]
+        },
+        {"tag": "another_campus",
+         "patterns": ["Can I borrow a book from another campus", "May I borrow a book from another campus","Could I borrow a book from another campus","Can I borrow books from another campus", "May I borrow books from another campus","Could I borrow books from another campus","Can I borrow anything from another campus", "May I borrow anything from another campus","Could I borrow anything from another campus"],
+         "responses": ["Yes. You can borrow in person from any of our campus libraries. You will need your current student or staff card, your alumnus card or library membership card if you are one of our other borrowers. If you are not on campus, call 08 8946 7016 or email askthelibrary@cdu.edu.au. If you are a Distance student, place your request to borrow through Distance Library Services"],
+         "context": [""]
+        },
+        {"tag": "library_workshops",
+         "patterns": ["Does the library run workshops","Will the library run workshops","Does the library run any workshops", "Does the library run a workshop", "Will the library run a workshop"],
+         "responses": ["Throughout the year the library has a variety of different workshops including general introductory sessions, endnote and workshops for researchers. See the Workshops page for more details.You can also find many video workshops/tutorials on the cdunilibrary youtube channel "],
+         "context": [""]
+        },
+        {"tag": "library_donations",
+         "patterns": ["Does the library accept donations","Will the library accept donations","Does the library accept any donations","Does the library accept donation","Will the library accept donation","Does the library accept any donation"],
+         "responses": ["Yes, we do. The library will consider whether the donated items are suitable to be added to the collection. Bring your donations to the library Service Desk and fill out an Offer of Donation form while there."],
+         "context": [""]
+        },
+        {"tag": "library_card_borrow_books",
+         "patterns": ["Do I need a library card to borrow books?", "Will I need a library card to borrow books"],
+         "responses": ["If you are a current student at CDU, use your student card to borrow items from the library. If you are a staff member, use your staff card. If you joined the library as a member of the public, a reciprocal borrower or a senior school student or staff member, use the card provided to you by the library."],
+         "context": [""]
+        },
+        {"tag": "CDU_library_offer",
+         "patterns": ["What does CDU library offer", "What will CDU library offer?", "What is CDU library offering?"],
+         "responses": ["CDU library has a lot of services and facilities on offer which can be found on the CDU library website. Also check out the CDU library promotion for a brief overview."],
+         "context": [""]
+        },
+        {"tag": "library_fines",
+         "patterns": ["How do I pay my library fines","how will I pay my library fines","how am I going to pay my library fines","what do I need to do to pay my library fines"],
+         "responses": ["Check with library Service Desk staff to find out what you need to pay first. Then you can use some of these fine payment options."],
+         "context": [""]
+        },
+        {"tag": "library_internet",
+         "patterns": ["Can I access the internet at CDU Library","How can I access the internet at CDU Library"],
+         "responses": ["If you are a current CDU student or staff member, you can access CDU's wifi anywhere on campus. Check the ITMS web page for information on how to set it up. If you are studying at another university, you may be able to access the internet via eduroam. Check with your university to find out what is needed to set this up on your device."],
+         "context": [""]
+        },
+        {"tag": "print_laptop",
+         "patterns": ["Can I print from my laptop in the library"],
+         "responses": ["Yes you can. Log into your printing account with your usual student login details. Choose the Web Print option from the menu to the left of the screen.Browse for the file you want to print, upload it and print it. Once it is Held in a queue you can take your student card to the printer at your campus to release your print job. "],
+         "context": [""]
+        },
+        {"tag": "food_drinks",
+         "patterns": ["Am I allowed to bring food and drinks into the library?"],
+         "responses": ["No food or open drinks can be eaten or drunk inside the library. You can bring drinks with lids on them into the library.All food, including snacks, can be eaten on the Level 2 and 3 balconies, in the Library Courtyard and the Library Foyer (both on Level 1)."],
+         "context": [""]
+        },
+        {"tag": "funds_printing_account",
+         "patterns": ["How do I add more funds to my printing account","How will I add more funds to my printing account."],
+         "responses": ["To add funds online, go to myprint.cdu.edu.au and log in with your usual student login details. Once you are in your account, choose from one of the add credit options in the menu to the left of the screen. To add funds with Eftpos, see Service Desk staff at Casuarina, or go the cashier at your campus. To add funds with cash, you will need to visit the cashier on your campus."],
+         "context": [""]
+        },
+        {"tag": "printing_cost",
+         "patterns": ["How much does printing cost","How much will the printing cost"],
+         "responses": ["A4 black and white:    $0.14 per page; A3 black and white:    $0.20 per page; A4 colour:              $0.70 per page; A3 colour: $0.90 per page. Click here for more information about printing. I've forgotten my password. You can reset your computer account password. Reset your password. If you have any trouble with this, contact Information Technology Management Support. "],
+         "context": [""]
+        },
+        {"tag": "who_library_spaces",
+         "patterns": ["Who can use which Library spaces","Who could use which Library spaces"],
+         "responses": ["All clients can use the general Library space. Casuarina:The Library Training Room is for Library staff-run training sessions for CDU teaching staff, researchers, students and some school groups. The Library Conference Room is for Library staff to meet with each other and various external and/or University stakeholders. It is occasionally used by groups not including Library staff at the discretion of the Director. The Beagle Deck, when not in use by students, is used for Library staff-run training sessions for CDU teaching staff, researchers, students, VET teaching staff and some local school groups. It is also used for Library, University and external stakeholder functions. Contact us with any enquiries and to make bookings."],
+         "context": [""]
+        },
+        {"tag": "find_books",
+         "patterns": ["How do I find books","How do I find a book","How can I find books","How can I find a book","How can I find a programming book", "How can I find programming books","C programming books", "Java programming books","C programming book","Java programming book","where is a programming book","where are programming books","where can I find a programming book","where can I find a programming book"],
+         "responses": ["Use Library Search to find print books and ebooks held by CDU Library. If you are trying to find a print book at Casuarina campus, go to the library website: https://www.cdu.edu.au/library/ Put the book title in double quotation marks into the search box or search using keywords. Once your results are displayed, used the filters on the left side of the screen. Apply the filter 'Books' and 'Casuarina Campus'. Once you have found the title you were looking for, take note of the call number of the specific title (eg. 028.5 ROWL, 743.69772 MILL). The books are shelved based on this number. Items are divided in the library by call number, with items in the 001 - 499 range located on the second floor and items in the 500 - 999 range located on the third floor. Initially look for the first three digits. Once you have located that number, look for the exact number after the full stop and then for the letters. Check out our Library search in brief video for more information about using Library Search."],
+         "context": [""]
+        },
+        {"tag": "alumni_borrow",
+         "patterns": ["Can alumni borrow from the library","Could alumni borrow from the library", "Will alumni borrow from the library", "Can alumni borrow a book from the library","Can alumni borrow books from the library","Could alumni borrow a book from the library","Could alumni borrow books from the library","Will alumni borrow a book from the library","Will alumni borrow books from the library"],
+         "responses": ["Yes. You will need register with the Office of Alumni Services first. A library account will then be created for you and you will receive a welcome email when your account is set up."],
+         "context": [""]
+        },
+        {"tag": "books_return",
+         "patterns": ["Can I return books to another campus library","Could I return books to another campus library","Can I return a book to another campus library","Could I return a book to another campus library"],
+         "responses": ["You can return most library items to any of our campus Libraries, with the exception of 2 day loans - these items must be returned to the campus library where they were borrowed."],
+         "context": [""]
+        },
+        {"tag": "members_borrow",
+         "patterns": ["Can members of the public borrow from the library","Can members of the public borrow items from the library","Can members of the public borrow any items from the library","Can members of the public borrow an item from the library"],
+         "responses": ["Yes, you are welcome to use the library spaces and borrow from our collections, see Members of the public for more information on how to join and what services are available to you."],
+         "context": [""]
+        },
+        {"tag": "books_return_library_closed",
+         "patterns": ["Can I return my books if the library is closed"],
+         "responses": ["Yes. Each campus library has an after-hours return chute."],
+         "context": [""]
+        },
+        {"tag": "aren't_getting_emails",
+         "patterns": ["Why aren't I getting emails from the library", "Why can't I get emails from the library","Why aren't I getting my emails from the library","Why can't I get my emails from the library","Why aren't I getting an email from the library","Why can't I get an email from the library","Why aren't I getting any emails from the library","Why can't I get any emails from the library"],
+         "responses": ["You need to activate your student and/or staff account to receive notifications about the items you have on loan or have requested from the library. Activate your student computer account. Activate your staff computer account."],
+         "context": [""]
+        },
+        {"tag": "online_resources",
+         "patterns": ["Can past students still access the library's online resources"],
+         "responses": ["No. CDU Library's electronic collection is only available to current students and staff."],
+         "context": [""]
+        },
+        {"tag": "lost_student_card",
+         "patterns": ["I've lost my student card, can I borrow without it","I have lost my student card, can I borrow without it"],
+         "responses": ["Yes, as long as you can provide photo ID and you are on our Library system, you can borrow."],
+         "context": [""]
+        },
+        {"tag": "lost_library_book",
+         "patterns": ["I have lost a library book, what do I do","I've lost a library book, what will I do"],
+         "responses": ["If you believe that you have lost a library item, contact library staff. You will need to fill in the Lost or Damaged Item form online or ask for one at the service desk."],
+         "context": [""]
+        },
+        {"tag": "on_account",
+         "patterns": ["I have returned my book but it's still on my account","I've returned my book but it's still on my account", "I have returned my book but why is it still on my account","I've returned my book but why is it still on my account"],
+         "responses": ["If an item is still on your library account but you are sure you have returned it, fill out a Claimed Returned form online or ask for one at the library service desk."],
+         "context": [""]
+        },
+        {"tag": "borrow_with_student card",
+         "patterns": ["Can I let someone else borrow with my student card"],
+         "responses": ["No, see our Conditions of Borrowing"],
+         "context": [""]
+        },
+        {"tag": "damage_a_library_book",
+         "patterns": ["What happens if I damage a library book","What happened if I damage library books"],
+         "responses": ["You will be billed for the replacement cost of the item. While there is usually a processing fee of $33 as well, if you declare the damaged item, we may waive this fee."],
+         "context": [""]
+        },
+        {"tag": "request_a_book",
+         "patterns": ["Can I request a book"],
+         "responses": ["You may place a request/hold on an item that is not available on the shelf, for example, if the item is on loan to another borrower. If the item is on the shelf, simply come in and get yourself. If the item you want is held at another campus, please see library service desk staff or contact us by calling 08 8946 7016 or emailing askthelibrary@cdu.edu.au. See Recalls and Holds for more information about how to place a hold."],
+         "context": [""]
+        },
+        {"tag": "request_a_book",
+         "patterns": ["Can past students still access the library's online resources?"],
+         "responses": ["No. CDU Library's electronic collection is only available to current students and staff. See here for more information about library services for alumni."],
+         "context": [""]
+        },
+        {"tag": "find_a_book_on_shelves",
+         "patterns": ["I can't find the book I want on the shelves even though it's listed as available","I can't find the book I want on the shelves even though it's listed as available. How can I find it","I can't find the book I want on the shelves even though it's listed as available. How could I find it","I can not find the book I want on the shelves even though it's listed as available","I can not find the book I want on the shelves even though it's listed as available. How can I find it","I can not find the book I want on the shelves even though it's listed as available. How could I find it","I can't find books I want on the shelves even though it's listed as available","I can't find books I want on the shelves even though it's listed as available. How can I find it","I can't find books I want on the shelves even though it's listed as available. How could I find it","I can not find books I want on the shelves even though it's listed as available. How can I find it","I can not find books I want on the shelves even though it's listed as available. How could I find it"],
+         "responses": ["Make sure to check the re-shelving trolleys at the end of the library wings on the 2nd and 3rd floors."],
+         "context": [""]
+        },
+        {"tag": "return_books",
+         "patterns": ["Can I return books to another campus library","Could I return books to another campus library","Can I return my books to another campus library","could I return my books to another campus library","Can I return a book to another campus library","Could I return a book to another campus library"],
+         "responses": ["You can return most library items to any of our campus Libraries, with the exception of 2 day loans - these items must be returned to the campus library where they were borrowed."],
+         "context": [""]
+        },
+        {"tag": "return_books",
+         "patterns": ["Can I borrow books if I'm a senior high school teacher","Can I borrow a book if I'm a senior high school teacher","Can I borrow items if I'm a senior high school teacher","Can I borrow an item, if I'm a senior high school teacher","Can I borrow anything if I'm a senior high school teacher","Can I borrow books if I'm a senior high school student","Can I borrow a book if I'm a senior high school student","Can I borrow items if I'm a senior high school student","Can I borrow an item, if I'm a senior high school student","Can I borrow anything if I'm a senior high school student"],
+         "responses": ["Yes, see our local senior school staff or student membership page for membership requirements and services offered."],
+         "context": [""]
+        },
+        {"tag": "return_books",
+         "patterns": ["I couldn't return my overdue books on time because I was sick, what can I do","I couldn't return my overdue books on time because I was sick, what could I do","I couldn't return my overdue books on time because I was sick, what may I do?"],
+         "responses": ["Fine waivers may be granted in exceptional circumstances. Supporting documentation, such as a medical certificate will be required.You will need to speak with Library Service Desk staff who will be able to direct you further. Visit the Library in person, call on 08 8946 7016 or email: askthelibrary@cdu.edu.au."],
+         "context": [""]
+        },
+        {"tag": "check_overdue_books",
+         "patterns": ["What are my prescribed textbooks"],
+         "responses": ["Click on  CDU Bookshop to search for your text books. Alternatively, Log into Learnline and click on Unit Information from the left hand tabs to find out about prescribed texts and recommended readings."],
+         "context": [""]
+        },
+        {"tag": "textbook_ebook",
+         "patterns": ["Is my textbook accessible as an eBook"],
+         "responses": ["We aim to have all prescribed text accessible as eBooks, but unfortunately they are not always available to us. To check if your textbook is available as an eBook: Go to Library Search. Put the book title in double quotation marks into the search box and search. Use the following filters 'Full Text Online' and 'Books'"],
+         "context": [""]
+        },
+        {"tag": "item_queue",
+         "patterns": ["How do I know where I am in the queue for a requested item","How could I know where I am in the queue for a requested item","How can I know where I am in the queue for a requested item?"],
+         "responses": ["Click on My Library Account at the top of the Library's home page https://www.cdu.edu.au/library/ where you will be able to see your position in the queue. Number 1 means that your are next in the queue and we will notify you by email when the book is available. Number 0 means that the book is ready for your collection at your nominated library."],
+         "context": [""]
+        },
+        {"tag": "Office_365",
+         "patterns": ["How do I get Office 365","How can I get Office 365","How could I get Office 365"],
+         "responses": ["The ITMS page has information about downloading Office 365. You can also select the tile 'Office 365' from the CDU Portal."],
+         "context": [""]
+        },
+        {"tag": "item_renew",
+         "patterns": ["How can I renew items","How could I renew items","How could I renew an item","How could I renew an item"],
+         "responses": ["Renewing items is done online via My Library Account. Click 'Loans' to display your current loans and click 'Renew'. Or, click 'Renew All' to renew all your current loans. Items can only be renewed online if they are neither overdue nor recalled."],
+         "context": [""]
+        },
+        {"tag": "books_mean",
+         "patterns": ["what are the books","what is a book"],
+         "responses": ["At the Casuarina campus library the majority of books are located on the 2nd and 3rd floor. Books are shelved following the Dewey Decimal System, which is a numerical system. Each number represents a specific subject area. Books with a Dewey number ranging from 001 to 499 are located on the 2nd floor. Books with a Dewey number ranging from 500 to 999 and the Law Collection are located on the 3rd floor.New books and periodicals are located on a display on the 1st floor. The Special Collection is a closed collection, you can place requests for items online. Special Collection items are library use only."],
+         "context": [""]
+        },
+        {"tag": "Australia_standard",
+         "patterns": ["How do I find Standards Australia","How could I find Standards Australia","How can I find Standards Australia","How do I find any Standards Australia","How could I find any Standards Australia","How can I find any Standards Australia"],
+         "responses": ["You can find Standards Australia in the A-Z database list, select S for Standard. Note: viewing of documents is limited to two user sessions, please log out when finished."],
+         "context": [""]
+        },
+        {"tag": "online_dictionary",
+         "patterns": ["Where can I find an online dictionary","Where could I find an online dictionary?"],
+         "responses": ["See the library’s eReference page to access the Macquarie Dictionary & Thesaurus as well as access to Oxford Reference Online that include access to various dictionaries in specialist areas"],
+         "context": [""]
+        },
+        {"tag": "Australia_statistics",
+         "patterns": ["How do I find statistics  Australia","How could I find statistics  Australia","How can I find statistics  Australia","How do I find any statistics Australia","How could I find any statistics  Australia","How can I find any statistics  Australia"],
+         "responses": ["The Australian Bureau of Statistics gives you access to Australian statistical data including information on the economy, people and industry."],
+         "context": [""]
+        },
+        {"tag": "find_books",
+         "patterns": ["How do I find books","How can I find books","How could I find books","How can I find a book","How can I find books","How could I find a book"],
+         "responses": ["Use Library Search to find print books and eBooks held by CDU Library. If you are trying to find a print book at Casuarina campus, go to the library website: https://www.cdu.edu.au/library/. Put the book title in double quotation marks into the search box or search using keywords. Once your results are displayed, used the filters on the left side of the screen. Apply the filter 'Books' and 'Casuarina Campus'. Once you have found the title you were looking for, take note of the call number of the specific title (eg. 028.5 ROWL, 743.69772 MILL). The books are shelved based on this number. Items are divided in the library by call number, with items in the 001 - 499 range located on the second floor and items in the 500 - 999 range located on the third floor. Initially look for the first three digits. Once you have located that number, look for the exact number after the full stop and then for the letters. Check out our Library search in brief video for more information about using Library Search."],
+         "context": [""]
+        },
+        {"tag": "my_textbooks",
+         "patterns": ["Where can I buy my textbooks","Where could I buy my textbooks?"],
+         "responses": ["See the CDU Bookshop for a list of the required texts for your units. You can purchase them online or in person if you are on campus at Casuarina."],
+         "context": [""]
+        },
+        {"tag": "specific_building",
+         "patterns": ["Where is a specific building","Where are specific buildings"],
+         "responses": ["See the links below for each campus' map of its buildings. Alice Springs: https://www.cdu.edu.au/campuses-centres/alice-springs-campus. Casuarina: https://www.cdu.edu.au/campuses-centres/casuarina-campus. Building numbers and colours https://www.cdu.edu.au/campuses-centres/casuarina-campus/buildings   Palmerston: https://www.cdu.edu.au/campuses-centres/palmerston-campus "],
+         "context": [""]
+        },
+        {"tag": "security_office",
+         "patterns": ["Where is the security office?"],
+         "responses": ["The Security Office is in building Orange 2 on level 1.You can call them any time on their free call number 1800 646 501 or email security@cdu.edu.au "],
+         "context": [""]
+        },
+        {"tag": "pay_fees",
+         "patterns": ["How do I pay my fees","How could I pay my fees","How can I pay my fees?"],
+         "responses": ["Information about paying your student fees can be found on the Student Central webpage. CDU>Student Central>Fees and payments"],
+         "context": [""]
+        },
+    
+        {"tag": "student_lounge",
+         "patterns": ["where is student lounge","where are student lounges","where can I find student lounges","where could I find student lounges","where can I find my student lounges","where can I find my student lounges","where can I find student lounge","where could I find student lounge","where can I find my student lounge","where can I find my student lounge"],
+         "responses": ["Alice Springs:No official space, but a bookable space in the library has an urn, a sink and a fridge available. Library staff provide a schedule of booking for the day so people know when they can get access to it. Casuarina: Red 2.1.02 fridge, sandwich press, microwave, kettle, bench seating, coffee tables. Access available from 8am to 12 midnight.Others can be found on the FAS site here: https://www.cdu.edu.au/university-operations/facilities-management. Palmerston: Building A, Level 1. Sydney: Adjacent to the Library on Level 9. Waterfront: Level 3 - student lounge and kitchen "],
+         "context": [""]
+        },
+        {"tag": "APA_reference",
+         "patterns": ["Why do I see initials in my APA in-text references","Why can I see initials in my APA in-text references","Why could I see initials in my APA in-text references?"],
+         "responses": ["This issue arises when you have 2 or more authors with the same surname and different initials or the same author is added differently in EndNote ie: Creswell, D.A. and Creswell, DA. There are a few options to assist with this including: ensure all duplicate authors are consistent in the Author Terms List, edit the CDU-APA reference style Citations-Author Name template, edit CDU-APA Citations-Ambiguous citations."],
+         "context": [""]
+        },
+        {"tag": "where_books",
+         "patterns": ["Where are the books","Where is a book","where can I find books","where can I find a book"],
+         "responses": ["At the Casuarina campus library the majority of books are located on the 2nd and 3rd floor. Books are shelved following the Dewey Decimal System, which is a numerical system. Each number represents a specific subject area. Books with a Dewey number ranging from 001 to 499 are located on the 2nd floor. Books with a Dewey number ranging from 500 to 999 and the Law Collection are located on the 3rd floor. New books and periodicals are located on a display on the 1st floor. The Special Collection is a closed collection, you can place requests for items online. Special Collection items are library use only."],
+         "context": [""]
+        },
+        {"tag": "find_student_email",
+         "patterns": ["How do I find my student email?","How can I find my student email","How could I find my student email"],
+         "responses": ["Log into  CDU Student Portal to access Outlook (email), the Library, Learnline, Office 365, etc. The portal URL is https://portal.cdu.edu.au."],
+         "context": [""]
+        },
+        {"tag": "distance_student",
+         "patterns": ["I am a Distance student, can I borrow a book while visiting on campus","I am a Distance student, could I borrow a book while visiting on campus"],
+         "responses": ["Yes. You will need your student card to borrow. Check with library staff about where to get your card as it varies between different campuses. No return postage is provided if you borrow in person, on campus."],
+         "context": [""]
+        },
+        {"tag": "find_bathrooms",
+         "patterns": ["How do I find the bathrooms","How can I find the bathrooms?"],
+         "responses": ["Each campus library has access to bathrooms.At Casuarina Campus bathrooms are located on each floor on either side of the stairwell and the disability bathroom is located on the second floor next to the elevator."],
+         "context": [""]
+        },
+        {"tag": "ATM_machine",
+         "patterns": ["Is there an ATM on campus","Are there any ATM machines on campus","Are there any ATM on campus"],
+         "responses": ["Casuarina campus: There is an ATM located at Red 1 at the Casuarina campus, near the Post Office and the ITMS kiosk.The Library has EFTPOS facilities. Alice Springs, Palmerston, Sydney and Darwin Waterfront campuses: There is no ATM on campus, ask the Service Desk staff for recommendations. "],
+         "context": [""]
+        },
+        {"tag": "reference_interview",
+         "patterns": ["How do I reference an interview I conducted","How could I reference an interview I conducted ","How do I reference a conversation I conducted","How could I reference a conversation I conducted","How do I reference an email","How could I reference an email","How do I reference a lecture note ","How could I reference a lecture note","How could I reference lecture notes","How could I reference emails"],
+         "responses": ["Reference these resources as ‘personal items or communication’. Reference these resources as ‘personal items or communication’.See CDU Harvard Referencing Style guide, page 6. See the CDU Library Referencing LibGuide to access these guides:  http://libguides.cdu.edu.au/cdureferencing."],
+         "context": [""]
+        },
+        {"tag": "plagiarism",
+         "patterns": ["Where can I learn more about Plagiarism","Where could I learn more about Plagiarism","What is plagiarism"],
+         "responses": ["Plagiarism is presenting, without any form of acknowledgement, the ideas or words of another writer as if they were your own.  The Library Plagiarism Guide contains more information and tutorials. Test your knowledge with the Plagiarism Quiz."],
+         "context": [""]
+        },
+        {"tag": "article",
+         "patterns": ["What to do if an article does not open, if I get an error message or if a completely different article opens"],
+         "responses": ["Clear your cache. Try a different browser. The following Library Search filters need to be added one at a time: full text and then peer-reviewed. Go directly to the journal to locate the article: Take note of the journal title, year, volume and issue number, From the library website go to the eJournals list (you may need to logon with your CDU credentials at this point), Type the journal name into the search box,Select the database that holds the journal (check the years covered in the journal),Locate the year, volume and issue number of the journal, Browse through that issue to locate the article, If you are still unable to open the article get in touch with us: askthelibrary@cdu.edu.au or 08 8946 7016. We will always want to know if there are issues with finding resources."],
+         "context": [""]
+        },
+        {"tag": "find_a_case",
+         "patterns": ["How do I find a case",". How could I find a case?",". How can I find a case"],
+         "responses": ["You can use the library databases to assist you in finding case law. The Law Guide has a list of relevant law databases. See the Law Research Guide Research Case Law for a video on how to find case law and other information. For more assistance with searching please contact a Librarian."],
+         "context": [""]
+        },
+        {"tag": "APA",
+         "patterns": ["What has changed from APA 6th to APA 7th","What did change from APA 6th to APA 7th","What are the changes from APA 6th to APA 7th","What is a change from APA 6th to APA 7th"],
+         "responses": ["For a detailed list of changes, see Key changes between APA 6th and APA 7th. Also consult your CDU APA 7th Referencing Style Guide (February 2020). Some of the changes include: Books: No place of publication, Online resources: No 'Retrieved from', Hyperlinks: Include hyperlinks in DOIs and URLs, In-text citations: 3+ authors - use 'et al.' from the first citation onward, Only one acceptable DOI format: https://doi.org/10.1093/7894326,Library resources: Only use DOIs for library resources. Do not include a URL if there is no DOI. "],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["I am unable to provide details for this query, for further details please visit the libaray website cdu.edu.au/library"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        }
+   ]
+}
